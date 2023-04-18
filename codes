@@ -1,0 +1,84 @@
+1#pattern printing for stars
+public class Main
+{
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=0;i<n;i++){
+		    for(int j=i;j<n;j++){
+		        System.out.print("*");
+		    }
+		    System.out.println();
+		}
+	}
+}
+
+2#pattern printing for daimond
+public class Main
+{
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=0;i<n;i++){
+		    for(int j=i;j<n;j++){
+		        System.out.print(" ");
+		    }
+		    for(int j=n-i;j<=n;j++){
+		        System.out.print("* ");
+		    }
+		    System.out.println();
+		}
+	}
+}
+
+3#program for matrix
+public class Main
+{
+	public static void main(String[] args) {
+		int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+		for(int i=0;i<a.length;i++){
+		    for(int j=0;j<a.length;j++){
+		        System.out.print(a[i][j]+" ");
+		    }
+		}
+		
+	}
+}
+4#program for matrix transpose
+public class Main
+{
+    public static void transpose(int[][] a){
+        for(int i=0;i<a.length;i++){
+            for(int j=i+1;j<a.length;j++){
+                int temp=a[i][j];
+                a[i][j]=a[j][i];
+                a[j][i]=temp;
+            }
+        }
+    }
+	public static void main(String[] args) {
+		int a[][]={{1,2,3},{4,5,6},{7,8,9}};
+		transpose(a);
+		for(int i=0;i<a.length;i++){
+		    for(int j=0;j<a.length;j++){
+		        System.out.print(a[i][j]+" ");
+		    }
+		    System.out.println();
+		}
+		
+	}
+}
+5#program to print a pattern
+public class Main
+{
+	public static void main(String[] args) {
+		int n=5;
+		int k=n;
+		for(int i=0;i<n;i++){
+		    for(int j=i;j<n;j++){
+		        System.out.print("-");
+		    }
+		    System.out.println(k);
+		    k--;
+		}
+		
+	}
+}
